@@ -18,7 +18,7 @@ const dishes = [
     name:"Truffle Pasta",
     category:"Main Courses",
     price:"$45",
-    image:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+    image: "/images/truffle.jpeg"
   },
 
 
@@ -26,7 +26,7 @@ const dishes = [
     name:"Premium Steak",
     category:"Main Courses",
     price:"$70",
-    image:"https://images.unsplash.com/photo-1544025162-d76694265947"
+     image: "/images/steak.jpeg"
   },
 
 
@@ -34,7 +34,7 @@ const dishes = [
     name:"Luxury Burger",
     category:"Sandwiches",
     price:"$35",
-    image:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+    image: "/images/burger.jpeg"
   },
 
 
@@ -42,7 +42,7 @@ const dishes = [
     name:"Chocolate Dessert",
     category:"Desserts",
     price:"$25",
-    image:"https://images.unsplash.com/photo-1551024506-0bccd828d307"
+    image: "/images/chocolate.jpeg"
   },
 
 
@@ -50,7 +50,7 @@ const dishes = [
     name:"Signature Drink",
     category:"Drinks",
     price:"$15",
-    image:"https://images.unsplash.com/photo-1544145945-f90425340c7e"
+    image: "/images/drink.jpeg"
   }
 
 ];

@@ -11,9 +11,9 @@ export default function Home() {
 
       {/* Navbar */}
 
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-14 py-8">
+      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-5 md:px-14 py-5 md:py-8">
 
-        <h1 className="text-2xl tracking-[0.5em] text-[#d4af37]">
+        <h1 className="text-xl md:text-2xl tracking-[0.3em] md:tracking-[0.5em] text-[#d4af37]">
           LUXE
         </h1>
 
@@ -39,20 +39,20 @@ export default function Home() {
         </div>
 
 
-        <button
-          className="
-          border border-[#d4af37]
-          text-[#d4af37]
-          px-8
-          py-3
-          rounded-full
-          tracking-widest
-          text-xs
-          hover:bg-[#d4af37]
-          hover:text-black
-          transition
-          "
-        >
+<button
+className="
+border border-[#d4af37]
+text-[#d4af37]
+px-5 md:px-8
+py-2 md:py-3
+rounded-full
+text-[10px] md:text-xs
+tracking-widest
+hover:bg-[#d4af37]
+hover:text-black
+transition
+"
+>
           RESERVE
         </button>
 
@@ -63,7 +63,7 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section className="h-screen flex items-center relative px-14">
+<section className="min-h-screen flex flex-col md:flex-row justify-center relative px-5 md:px-14 pt-32 md:pt-0">
 
 
         {/* TEXT */}
@@ -85,7 +85,14 @@ export default function Home() {
             ease:"easeOut"
           }}
 
-          className="relative z-20 w-[55%]"
+          className="
+relative
+z-20
+w-full
+md:w-[55%]
+text-center
+md:text-left
+"
 
         >
 
@@ -98,7 +105,7 @@ export default function Home() {
 
 
 
-          <h2 className="font-serif text-8xl leading-[0.85]">
+          <h2 className="font-serif text-5xl sm:text-6xl md:text-8xl leading-[0.85]">
 
             The
             <br/>
@@ -112,7 +119,7 @@ export default function Home() {
 
 
 
-          <p className="mt-10 text-gray-400 text-lg max-w-lg leading-relaxed">
+          <p className="mt-10 text-gray-400 text-base md:text-lg max-w-md md:max-w-lg mx-auto md:mx-0 leading-relaxed">
 
             A world of refined flavors,
             handcrafted dishes and unforgettable moments.
@@ -127,8 +134,8 @@ export default function Home() {
             mt-12
             bg-[#d4af37]
             text-black
-            px-12
-            py-4
+            px-8 md:px-12
+            py-3 md:py-4
             rounded-full
             tracking-widest
             text-sm
@@ -167,14 +174,18 @@ export default function Home() {
             ease:"easeOut"
           }}
 
-          className="
-          absolute
-          right-0
-          top-0
-          w-[60%]
-          h-screen
-          "
-
+className="
+relative
+md:absolute
+right-0
+top-0
+w-full
+md:w-[60%]
+h-[50vh]
+md:h-screen
+mt-10
+md:mt-0
+"
         >
 
 
@@ -205,8 +216,7 @@ export default function Home() {
 
   <img
 
-    src="https://images.unsplash.com/photo-1547592180-85f173990554"
-
+   src="/images/hero.jpeg"
     className="
     w-full
     h-full
@@ -248,7 +258,7 @@ export default function Home() {
 
 {/* Signature Dishes */}
 
-<section className="bg-[#080808] py-32 px-14">
+<section className="bg-[#080808] py-24 md:py-32 px-5 md:px-14">
 
 
   <div className="text-center mb-20">
@@ -259,7 +269,7 @@ export default function Home() {
     </p>
 
 
-    <h2 className="text-6xl font-serif">
+    <h2 className="text-4xl md:text-6xl font-serif">
       Crafted With Passion
     </h2>
 
@@ -269,7 +279,7 @@ export default function Home() {
 
 
 
-  <div className="grid md:grid-cols-3 gap-10">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
 
 
@@ -282,11 +292,10 @@ export default function Home() {
 
         <img
 
-          src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
-
+         src="/images/dish1.jpeg"
           className="
           w-full
-          h-full
+          h-80 md:h-[450px]
           object-cover
           group-hover:scale-110
           transition
@@ -337,11 +346,11 @@ export default function Home() {
 
         <img
 
-          src="https://images.unsplash.com/photo-1544025162-d76694265947"
+          src="/images/dish2.jpeg"
 
           className="
           w-full
-          h-full
+          h-80 md:h-[450px]
           object-cover
           group-hover:scale-110
           transition
@@ -391,11 +400,11 @@ export default function Home() {
 
         <img
 
-          src="https://images.unsplash.com/photo-1551024506-0bccd828d307"
+          src="/images/dish3.jpeg"
 
           className="
           w-full
-          h-full
+          h-80 md:h-[450px]
           object-cover
           group-hover:scale-110
           transition
@@ -439,7 +448,7 @@ export default function Home() {
 </section>
 {/* About Restaurant */}
 
-<section className="bg-[#0b0b0b] py-32 px-14">
+<section className="bg-[#0b0b0b] py-24 md:py-32 px-5 md:px-14">
 
   <div className="grid md:grid-cols-2 gap-16 items-center">
 
@@ -450,11 +459,11 @@ export default function Home() {
 
       <img
 
-        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0"
+        src="/images/about.jpeg"
 
         className="
         w-full
-        h-[600px]
+       h-96 md:h-[600px]
         object-cover
         "
 
@@ -503,7 +512,7 @@ export default function Home() {
       </p>
 
 
-      <h2 className="text-6xl font-serif leading-tight">
+      <h2 className="text-4xl md:text-6xl font-serif leading-tight">
 
         More Than
         <br/>
@@ -534,7 +543,7 @@ export default function Home() {
 
       {/* Stats */}
 
-      <div className="flex gap-12 mt-12">
+      <div className="flex-wrap justify-center md:justify-start gap-8 md:gap-12 mt-12">
 
 
         <div>
@@ -591,7 +600,7 @@ export default function Home() {
 </section>
 {/* Gallery */}
 
-<section className="bg-[#080808] py-32 px-14">
+<section className="bg-[#080808] py-24 md:py-32 px-5 md:px-14">
 
 
   <div className="text-center mb-20">
@@ -602,7 +611,7 @@ export default function Home() {
     </p>
 
 
-    <h2 className="text-6xl font-serif">
+    <h2 className="text-4xl md:text-6xl font-serif">
       Restaurant Gallery
     </h2>
 
@@ -611,13 +620,14 @@ export default function Home() {
 
 
 
-  <div className="grid md:grid-cols-3 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
 
     <img
-      src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+     src="/images/gallery1.jpeg"
+
       className="
-      h-[500px]
+      h-72 md:h-[500px]
       w-full
       object-cover
       "
@@ -625,9 +635,10 @@ export default function Home() {
 
 
     <img
-      src="https://images.unsplash.com/photo-1552566626-52f8b828add9"
+      src="/images/gallery2.jpeg"
+
       className="
-      h-[500px]
+      h-72 md:h-[500px]
       w-full
       object-cover
       "
@@ -635,9 +646,10 @@ export default function Home() {
 
 
     <img
-      src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f"
+      src="/images/gallery3.jpeg"
+
       className="
-      h-[500px]
+     h-72 md:h-[500px]
       w-full
       object-cover
       "
@@ -650,7 +662,7 @@ export default function Home() {
 </section>
 {/* Reservation */}
 
-<section className="bg-[#080808] py-32 px-14 relative">
+<section className="bg-[#080808] py-24 md:py-32 px-5 md:px-14 relative">
 
 
   <div className="absolute inset-0 bg-[#d4af37]/5"></div>
@@ -664,7 +676,7 @@ export default function Home() {
     </p>
 
 
-    <h2 className="text-6xl font-serif mb-8">
+    <h2 className="text-4xl md:text-6xl font-serif mb-8">
       Your Table Awaits
     </h2>
 
@@ -677,7 +689,7 @@ export default function Home() {
 
 
 
-    <div className="grid md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
 
       <input
